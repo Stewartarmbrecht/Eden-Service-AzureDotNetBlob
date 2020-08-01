@@ -1,0 +1,762 @@
+{
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessUpdatesBlobMetadata" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4455a3e2554d8dac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379546,
+        "stop" : 1595381379547,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessDeletesBlob" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9f883143b775d581",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379648,
+        "stop" : 1595381379651,
+        "duration" : 3
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetListFunctionTests.WithAnotherUserIdDoesNotReturnSummaries" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a7088f8155d3f8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379693,
+        "stop" : 1595381379695,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithNullPayloadRequestReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "364b449842dd24de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379617,
+        "stop" : 1595381379619,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7e6a3faad89ec6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379667,
+        "stop" : 1595381379671,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessReturnsNoContentResult" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d8eb920ce895d5f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379532,
+        "stop" : 1595381379546,
+        "duration" : 14
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a6f40b3713f6a0b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379728,
+        "stop" : 1595381379730,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithNoTranscriptReturnsNotFound" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9bd669e1f9d4165",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379734,
+        "stop" : 1595381379736,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c070011301ae14f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379684,
+        "stop" : 1595381379688,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8610cda7c26ab52c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379552,
+        "stop" : 1595381379560,
+        "duration" : 8
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithMissingUserIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74a1de6f8d18a722",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379699,
+        "stop" : 1595381379704,
+        "duration" : 5
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithIncorrectUserIdReturnsMyEdenServiceNotFound" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e09d66b0c62396ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379659,
+        "stop" : 1595381379660,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1f0dc93d50f51e96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379704,
+        "stop" : 1595381379708,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessPublishesMyEdenServiceCreatedEventToEventGrid" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9803e132bf90e1cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379547,
+        "stop" : 1595381379552,
+        "duration" : 5
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "22a14b5ff8fd560b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379609,
+        "stop" : 1595381379613,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithInvalidJsonRequestReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68fec3fad605f10b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379613,
+        "stop" : 1595381379617,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ae24b1387fc5c33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379518,
+        "stop" : 1595381379532,
+        "duration" : 14
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithIncorrectUserIdReturnsMyEdenServiceNotUploaded" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24abb4e61fd46cfc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379562,
+        "stop" : 1595381379564,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithBlobStorageFailing" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "18cfb8dd97c500f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379695,
+        "stop" : 1595381379699,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithTranscriptMissingReturnsMyEdenServiceNote" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd8756fe28612aa9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379674,
+        "stop" : 1595381379675,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSuccessPublishesMyEdenServiceTranscriptUpdatedEventToEventGrid" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "835006ca514de6ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379724,
+        "stop" : 1595381379728,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithThrownExceptionThrowsException" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b9ddc5d33c9dacd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379740,
+        "stop" : 1595381379743,
+        "duration" : 3
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithMissingUserIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "94d4a9b91b5f6e73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379660,
+        "stop" : 1595381379667,
+        "duration" : 7
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceTranscriptionServiceTests.CreateMyEdenServiceTranscriptRequestReturnsExpectedRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51966aa5a02147d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379622,
+        "stop" : 1595381379626,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithIncorrectUserIdReturnsNull" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78f6dd6cf12df348",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379676,
+        "stop" : 1595381379678,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7ffd4d2e6654cb0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379657,
+        "stop" : 1595381379659,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceTranscriptionServiceTests.ProcessMyEdenServiceTranscriptResponseReturnsExpectedResponse" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64664c056d09d7a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379626,
+        "stop" : 1595381379648,
+        "duration" : 22
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithIncorrectUserIdReturnsNotFound" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aa276c34a591ad79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379732,
+        "stop" : 1595381379734,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithMissingUserIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3ab02f1969103ac1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379678,
+        "stop" : 1595381379683,
+        "duration" : 5
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithSuccessReturnsMyEdenService" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3698ff5d49d3fbab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379671,
+        "stop" : 1595381379674,
+        "duration" : 3
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e41422ff0c2168",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379651,
+        "stop" : 1595381379654,
+        "duration" : 3
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSuccessUpdatesBlobTranscriptInMetadata" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4197ca8e66f8773",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379708,
+        "stop" : 1595381379724,
+        "duration" : 16
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMyEdenServiceFileAlreadyCreatedReturnsMyEdenServiceAlreadyCreated" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98ac3dcec526c8a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379560,
+        "stop" : 1595381379562,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithSuccessReturnsIdAndUrl" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f392ada62388027",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379299,
+        "stop" : 1595381379464,
+        "duration" : 165
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithMissingUserIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32ab1443208ea349",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379470,
+        "stop" : 1595381379518,
+        "duration" : 48
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingUserIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d04056cfc115bd70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379604,
+        "stop" : 1595381379609,
+        "duration" : 5
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithInvalidMyEdenServiceIdReturnsNull" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb62c1bb89762e9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379675,
+        "stop" : 1595381379676,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSubscriptionValidationEventReturnsActionResult" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1cb9bd56044de90a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379736,
+        "stop" : 1595381379740,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingCategoryIdReturnsBadRequest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8a344efcb3dfdffa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379619,
+        "stop" : 1595381379622,
+        "duration" : 3
+      }
+    } ]
+  },
+  "ContentReactor.MyEdenService.Service.Tests.Unit.GetListFunctionTests.WithSuccessReturnsSummaries" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fefa8238fa01aa25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595381379688,
+        "stop" : 1595381379693,
+        "duration" : 5
+      }
+    } ]
+  }
+}

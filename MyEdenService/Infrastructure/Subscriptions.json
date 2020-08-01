@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "instanceName": {
+            "type": "string",
+            "metadata": {
+                "description": "Provides a unique string that will be pre-pended to all resource names and will ensure that they are globally unique."
+            }
+        }
+    },
+    "variables": {
+        "functionUrl" : "[concat('https://', parameters('instanceName'),'-MyEdenService.azurewebsites.net/api/UpdateMyEdenServiceTranscript?code=')]",
+        "eventGridTopicName": "[concat(parameters('instanceName'),'-events-topic')]",
+        "eventGridTopicNameStaging": "[concat(parameters('instanceName'),'-staging-events-topic')]",
+        "eventGridFunctionSubscriptions": [
+            {
+                "resourceName": "MyEdenServiceUpdateMyEdenServiceTranscript",
+                "functionName": "UpdateMyEdenServiceTranscript",
+                "eventTypes": [
+                    "MyEdenServiceCreated"
+                ]
+            }
+        ]
+    },
+    "resources": [
+        {
+            "copy": {
+                "name": "eventGridFunctionSubscriptions",
+                "count": "[length(variables('eventGridFunctionSubscriptions'))]",
+                "mode": "Parallel"
+            },
+            "type": "Microsoft.EventGrid/topics/providers/eventSubscriptions",
+            "apiVersion": "2019-01-01",
+            "name": "[concat(variables('eventGridTopicName'), '/Microsoft.EventGrid/', variables('eventGridFunctionSubscriptions')[copyIndex('eventGridFunctionSubscriptions')].resourceName)]",
+            "properties": {
+                "destination": {
+                    "endpointType": "WebHook",
+                    "properties": {
+                        "endpointUrl": "[concat(variables('functionUrl'), listKeys(resourceId(concat(parameters('instanceName'),'-MyEdenService'), 'Microsoft.Web/sites/host/', concat(parameters('instanceName'),'-MyEdenService'), 'default'),'2016-08-01').functionkeys.default)]"
+                    }
+                },
+                "filter": {
+                    "includedEventTypes": "[variables('eventGridFunctionSubscriptions')[copyIndex('eventGridFunctionSubscriptions')].eventTypes]"
+                }
+            }
+        }
+    ]
+}

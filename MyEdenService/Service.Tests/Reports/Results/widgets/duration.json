@@ -1,0 +1,401 @@
+[ {
+  "uid" : "51966aa5a02147d9",
+  "name" : "CreateMyEdenServiceTranscriptRequestReturnsExpectedRequest",
+  "time" : {
+    "start" : 1595381379622,
+    "stop" : 1595381379626,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8610cda7c26ab52c",
+  "name" : "WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded",
+  "time" : {
+    "start" : 1595381379552,
+    "stop" : 1595381379560,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18cfb8dd97c500f3",
+  "name" : "WithBlobStorageFailing",
+  "time" : {
+    "start" : 1595381379695,
+    "stop" : 1595381379699,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8eb920ce895d5f9",
+  "name" : "WithSuccessReturnsNoContentResult",
+  "time" : {
+    "start" : 1595381379532,
+    "stop" : 1595381379546,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa276c34a591ad79",
+  "name" : "WithIncorrectUserIdReturnsNotFound",
+  "time" : {
+    "start" : 1595381379732,
+    "stop" : 1595381379734,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ae24b1387fc5c33",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379518,
+    "stop" : 1595381379532,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cb9bd56044de90a",
+  "name" : "WithSubscriptionValidationEventReturnsActionResult",
+  "time" : {
+    "start" : 1595381379736,
+    "stop" : 1595381379740,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd8756fe28612aa9",
+  "name" : "WithTranscriptMissingReturnsMyEdenServiceNote",
+  "time" : {
+    "start" : 1595381379674,
+    "stop" : 1595381379675,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb62c1bb89762e9a",
+  "name" : "WithInvalidMyEdenServiceIdReturnsNull",
+  "time" : {
+    "start" : 1595381379675,
+    "stop" : 1595381379676,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74a1de6f8d18a722",
+  "name" : "WithMissingUserIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379699,
+    "stop" : 1595381379704,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22a14b5ff8fd560b",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379609,
+    "stop" : 1595381379613,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "835006ca514de6ac",
+  "name" : "WithSuccessPublishesMyEdenServiceTranscriptUpdatedEventToEventGrid",
+  "time" : {
+    "start" : 1595381379724,
+    "stop" : 1595381379728,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98ac3dcec526c8a3",
+  "name" : "WithMyEdenServiceFileAlreadyCreatedReturnsMyEdenServiceAlreadyCreated",
+  "time" : {
+    "start" : 1595381379560,
+    "stop" : 1595381379562,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f392ada62388027",
+  "name" : "WithSuccessReturnsIdAndUrl",
+  "time" : {
+    "start" : 1595381379299,
+    "stop" : 1595381379464,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a7088f8155d3f8e",
+  "name" : "WithAnotherUserIdDoesNotReturnSummaries",
+  "time" : {
+    "start" : 1595381379693,
+    "stop" : 1595381379695,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fefa8238fa01aa25",
+  "name" : "WithSuccessReturnsSummaries",
+  "time" : {
+    "start" : 1595381379688,
+    "stop" : 1595381379693,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9bd669e1f9d4165",
+  "name" : "WithNoTranscriptReturnsNotFound",
+  "time" : {
+    "start" : 1595381379734,
+    "stop" : 1595381379736,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f883143b775d581",
+  "name" : "WithSuccessDeletesBlob",
+  "time" : {
+    "start" : 1595381379648,
+    "stop" : 1595381379651,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "68fec3fad605f10b",
+  "name" : "WithInvalidJsonRequestReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379613,
+    "stop" : 1595381379617,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78f6dd6cf12df348",
+  "name" : "WithIncorrectUserIdReturnsNull",
+  "time" : {
+    "start" : 1595381379676,
+    "stop" : 1595381379678,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ab02f1969103ac1",
+  "name" : "WithMissingUserIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379678,
+    "stop" : 1595381379683,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7e6a3faad89ec6b",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379667,
+    "stop" : 1595381379671,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4197ca8e66f8773",
+  "name" : "WithSuccessUpdatesBlobTranscriptInMetadata",
+  "time" : {
+    "start" : 1595381379708,
+    "stop" : 1595381379724,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94d4a9b91b5f6e73",
+  "name" : "WithMissingUserIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379660,
+    "stop" : 1595381379667,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f0dc93d50f51e96",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379704,
+    "stop" : 1595381379708,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3698ff5d49d3fbab",
+  "name" : "WithSuccessReturnsMyEdenService",
+  "time" : {
+    "start" : 1595381379671,
+    "stop" : 1595381379674,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d04056cfc115bd70",
+  "name" : "WithMissingUserIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379604,
+    "stop" : 1595381379609,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64664c056d09d7a8",
+  "name" : "ProcessMyEdenServiceTranscriptResponseReturnsExpectedResponse",
+  "time" : {
+    "start" : 1595381379626,
+    "stop" : 1595381379648,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9ddc5d33c9dacd3",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379740,
+    "stop" : 1595381379743,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24abb4e61fd46cfc",
+  "name" : "WithIncorrectUserIdReturnsMyEdenServiceNotUploaded",
+  "time" : {
+    "start" : 1595381379562,
+    "stop" : 1595381379564,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e09d66b0c62396ff",
+  "name" : "WithIncorrectUserIdReturnsMyEdenServiceNotFound",
+  "time" : {
+    "start" : 1595381379659,
+    "stop" : 1595381379660,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a344efcb3dfdffa",
+  "name" : "WithMissingCategoryIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379619,
+    "stop" : 1595381379622,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ffd4d2e6654cb0f",
+  "name" : "WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound",
+  "time" : {
+    "start" : 1595381379657,
+    "stop" : 1595381379659,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e41422ff0c2168",
+  "name" : "WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid",
+  "time" : {
+    "start" : 1595381379651,
+    "stop" : 1595381379654,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "364b449842dd24de",
+  "name" : "WithNullPayloadRequestReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379617,
+    "stop" : 1595381379619,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c070011301ae14f",
+  "name" : "WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379684,
+    "stop" : 1595381379688,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4455a3e2554d8dac",
+  "name" : "WithSuccessUpdatesBlobMetadata",
+  "time" : {
+    "start" : 1595381379546,
+    "stop" : 1595381379547,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32ab1443208ea349",
+  "name" : "WithMissingUserIdReturnsBadRequest",
+  "time" : {
+    "start" : 1595381379470,
+    "stop" : 1595381379518,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9803e132bf90e1cc",
+  "name" : "WithSuccessPublishesMyEdenServiceCreatedEventToEventGrid",
+  "time" : {
+    "start" : 1595381379547,
+    "stop" : 1595381379552,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6f40b3713f6a0b3",
+  "name" : "WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound",
+  "time" : {
+    "start" : 1595381379728,
+    "stop" : 1595381379730,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

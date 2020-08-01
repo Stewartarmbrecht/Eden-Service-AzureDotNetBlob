@@ -1,0 +1,60 @@
+{
+  "uid" : "f63e71e3964471d4",
+  "name" : "WithThrownExceptionThrowsException",
+  "fullName" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithThrownExceptionThrowsException",
+  "historyId" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1596147559766,
+    "stop" : 1596147559772,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "package",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "3221e539dca22fab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595465349884,
+          "stop" : 1595465349888,
+          "duration" : 4
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f63e71e3964471d4.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,60 @@
+{
+  "uid" : "fcbd612f3cf9b2c1",
+  "name" : "WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid",
+  "fullName" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid",
+  "historyId" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid",
+  "time" : {
+    "start" : 1596147559748,
+    "stop" : 1596147559751,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "package",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "976eb29418d4a618",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595465349873,
+          "stop" : 1595465349875,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fcbd612f3cf9b2c1.json",
+  "parameterValues" : [ ]
+}

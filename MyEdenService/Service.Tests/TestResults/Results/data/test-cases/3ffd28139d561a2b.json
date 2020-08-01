@@ -1,0 +1,60 @@
+{
+  "uid" : "3ffd28139d561a2b",
+  "name" : "WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded",
+  "fullName" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded",
+  "historyId" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded",
+  "time" : {
+    "start" : 1596147559634,
+    "stop" : 1596147559645,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "package",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "769bb8a40ea9ec5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595465349718,
+          "stop" : 1595465349727,
+          "duration" : 9
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3ffd28139d561a2b.json",
+  "parameterValues" : [ ]
+}

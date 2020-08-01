@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContentReactor.MyEdenService.Service.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service add opertions.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithSuccessReturnsIdAndUrl">
+            <summary>
+            Given you have an MyEdenService service
+            When you call the BeginAddMyEdenServiceNote method
+            Then it should return the id of the new blob and the url to upload the file to.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithMissingUserIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file started for upload
+            When you call the operation to complete the add
+            Then it should return a 204 NoContentResult.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddBeginFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the begin add operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service add opertions.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessReturnsNoContentResult">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file started for upload
+            When you call the operation to complete the add
+            Then it should return a 204 NoContentResult.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessUpdatesBlobMetadata">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file started for upload
+            When you call the add complete operation
+            Then it should update the cateogery and user id properties of the blob.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithSuccessPublishesMyEdenServiceCreatedEventToEventGrid">
+            <summary>
+            Given you have an MyEdenService service with an MyEdenService file started for upload
+            When you call the AddCompleteFunctionMyEdenServiceNoteAsync method
+            Then it should raise an MyEdenServiceCreated event.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded">
+            <summary>
+            Given you have an MyEdenService api with no MyEdenService files uploaded
+            When you call the add complete operation
+            Then it should return an bad request with the error "MyEdenService has not yet been uploaded.".
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMyEdenServiceFileAlreadyCreatedReturnsMyEdenServiceAlreadyCreated">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file that is already processed
+            When you call the add complete operation
+            Then it should return an bad request response with an error stating "Image has already been created.".
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithIncorrectUserIdReturnsMyEdenServiceNotUploaded">
+            <summary>
+            Given you have an MyEdenService apie with an MyEdenService file that is not processed
+            When you call the complete add operation with the wrong user id
+            Then it should return an bad request with the error "MyEdenService has not yet been uploaded.".
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingUserIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the begin add operation without a user id
+            Then it should return a bad request with the error returned by the user authentication service.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the begin add operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithInvalidJsonRequestReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the complete add operation
+            And the request has invalid json
+            Then it should return a BadRequestObjectResult
+            And the object should have an error property with the string 'Body should be provided in JSON format.'.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithNullPayloadRequestReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the complete add operation
+            And the request has no payload
+            Then it should return a BadRequestObjectResult
+            And the object should have an error property with the string 'Missing required property 'categoryId'.'.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithMissingCategoryIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the complete add operation
+            And the request has no payload
+            Then it should return a BadRequestObjectResult
+            And the object should have an error property with the string 'Missing required property 'categoryId'.'.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers">
+            <summary>
+            Helper functions to get mocks for MyEdenService unit testing.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetMockAddCompleteRequest">
+            <summary>
+            Gets a mocked MyEdenService add complete request.
+            </summary>
+            <returns>Mock http request with an MyEdenService add complete request in the body.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetMockEventGridMyEdenServiceCreatedRequest">
+            <summary>
+            Gets a mocked event grid update transcription request.
+            </summary>
+            <returns>Mock http request that would come from the event grid for an MyEdenService created event.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded">
+            <summary>
+            Gets an MyEdenService operations class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded(ContentReactor.Common.Fakes.FakeBlobRepository@)">
+            <summary>
+            Gets an MyEdenService operations class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <param name="fakeBlobRepo">Returns the fake blob repository with the added blob.</param>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded(ContentReactor.Common.Fakes.FakeBlobRepository@,Moq.Mock{ContentReactor.Common.Events.IEventGridPublisherService}@)">
+            <summary>
+            Gets an MyEdenService operations class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <param name="fakeBlobRepo">Returns the fake blob repository with the added blob.</param>
+            <param name="mockEventPub">Returns the mock event publisher service.</param>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded(Moq.Mock{ContentReactor.Common.UserAuthentication.IUserAuthenticationService}@)">
+            <summary>
+            Gets an MyEdenService operations class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <param name="mockUserAuth">Returns the mock user auth service.</param>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded(Moq.Mock{ContentReactor.Common.UserAuthentication.IUserAuthenticationService}@,ContentReactor.Common.Fakes.FakeBlobRepository@,Moq.Mock{ContentReactor.Common.Events.IEventGridPublisherService}@)">
+            <summary>
+            Gets an MyEdenService operations class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <param name="mockUserAuth">Returns the mock user auth.</param>
+            <param name="fakeBlobRepo">Returns the fake blob repository with the added blob.</param>
+            <param name="mockEventPub">Returns the fake event publisher.</param>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceMockers.GetApiFunctionsWithBlobUploaded(Moq.Mock{ContentReactor.Common.UserAuthentication.IUserAuthenticationService}@,ContentReactor.Common.Fakes.FakeBlobRepository@,Moq.Mock{ContentReactor.Common.Events.IEventGridPublisherService}@,Moq.Mock{ContentReactor.Common.Events.IEventGridSubscriberService}@,Moq.Mock{ContentReactor.MyEdenService.Service.IMyEdenServiceTranscriptionService}@)">
+            <summary>
+            Gets an MyEdenService worker functions class with a blob uploaded to the mock
+            blob repository.
+            </summary>
+            <param name="mockUserAuth">Returns the mock user auth.</param>
+            <param name="fakeBlobRepo">Returns the fake blob repository with the added blob.</param>
+            <param name="mockEventPub">Returns the fake event publisher.</param>
+            <param name="mockEventSub">Returns the fake event subscriber.</param>
+            <param name="mockMyEdenServiceTranscriptionService">Returns the mock MyEdenService transcription service.</param>
+            <returns>An instance of the <see cref="T:ContentReactor.MyEdenService.Service.Functions"/> class.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceTranscriptionServiceTests">
+            <summary>
+            Tests the MyEdenService transcription service.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceTranscriptionServiceTests.CreateMyEdenServiceTranscriptRequestReturnsExpectedRequest">
+            <summary>
+            Given you have a memory stream
+            When you call the CreateMyEdenServiceTranscriptionRequest and pass in the stream
+            Then the service should return a result that is not null.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.MyEdenServiceTranscriptionServiceTests.ProcessMyEdenServiceTranscriptResponseReturnsExpectedResponse">
+            <summary>
+            Given you have a valid response from the Microsoft Cognitive Services Speech to Text api
+            When you call the ProcessMyEdenServiceTranscriptResponse and pass in the string representation of the response
+            Then the service should return the display value of the best match included in the results.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service delete operation.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessDeletesBlob">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the delete MyEdenService operation
+            Then it should delete the blob from the repository.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the MyEdenService delete operation
+            Then it should raise the MyEdenServiceDeleted event.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound">
+            <summary>
+            Given you have an MyEdenService api with no blobs
+            When you call the delete operation
+            Then it should not throw an exception.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithIncorrectUserIdReturnsMyEdenServiceNotFound">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the delete MyEdenService operation with the wrong user id
+            Then it should execute, do nothing, and not raise an exception.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithMissingUserIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the delete operation without a user id
+            Then it should return a bad request with the error returned by the user authentication service.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.DeleteFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the delete operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service get opreations.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithSuccessReturnsMyEdenService">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file that is processed
+            When you call the get operation
+            Then it should return the MyEdenService blob properties including the transcript.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithTranscriptMissingReturnsMyEdenServiceNote">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file that is not processed
+            When you call the get operation
+            Then it should return the MyEdenService blob properties with the null transcript.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithInvalidMyEdenServiceIdReturnsNull">
+            <summary>
+            Given you have an MyEdenService api with no MyEdenService files
+            When you call the GetFunctionAsync method
+            Then it should return a no content result.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithIncorrectUserIdReturnsNull">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService file
+            When you call the get operation and pass in an invalid user id with the right blob id
+            Then it should return a null result.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithMissingUserIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the get operation without a user id
+            Then it should return a bad request with the error returned by the user authentication service.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the get operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.GetListFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service list operations.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetListFunctionTests.WithSuccessReturnsSummaries">
+            <summary>
+            Given you have an MyEdenService api with 2 blobs for a single user
+            When you call the get list opreation with the correct user id as the prefix
+            Then it should return both blobs.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.GetListFunctionTests.WithAnotherUserIdDoesNotReturnSummaries">
+            <summary>
+            Given you have an MyEdenService api with 2 blobs for 2 users user
+            When you call the get list operation with the first user id as the prefix
+            Then it should return only that users blob.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service get opreations.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithBlobStorageFailing">
+            <summary>
+            Given you have an MyEdenService api
+            And the blob storage check fails
+            When you call the health check function
+            Then it should return a failed health check status
+            And it should contain an error explaining that the blob storage check failed.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithMissingUserIdReturnsBadRequest">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the delete operation without a user id
+            Then it should return a bad request with the error returned by the user authentication service.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.HealthCheckFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the delete operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests">
+            <summary>
+            Contains unit tests for the MyEdenService Service update operations.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSuccessUpdatesBlobTranscriptInMetadata">
+            <summary>
+            Given you have an MyEdenService api with an MyEdenService blob
+            When you call the update MyEdenService transcript function
+            Then it should update the transcript property of the blob.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSuccessPublishesMyEdenServiceTranscriptUpdatedEventToEventGrid">
+            <summary>
+            Given you have an MyEdenService service with an MyEdenService blob
+            When you call the UpdateTranscriptFunctionAsync method
+            Then it should raise the MyEdenServiceEvents.MyEdenServiceTranscriptUpdated event.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the update MyEdenService transcript function with an invalid MyEdenService blob id
+            Then it should return a not found results.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithIncorrectUserIdReturnsNotFound">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the update transcript function with an invalid user id but the correct blob id
+            Then it should return a not found result.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithNoTranscriptReturnsNotFound">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the update transcript function with an MyEdenService file that does not return a transcript
+            Then it should return a not found result.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithSubscriptionValidationEventReturnsActionResult">
+            <summary>
+            Given you have an MyEdenService api with a blob
+            When you call the update transcript function to validate it handles the event grid subscription event
+            Then it should return the action result return by the Event Subscription service.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Unit.UpdateTranscriptFunctionTests.WithThrownExceptionThrowsException">
+            <summary>
+            Given you have an MyEdenService api
+            When you call the update transcription operation
+            And a sub-component throws and exception
+            Then it should log the exception and throw it.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="T:ContentReactor.MyEdenService.Service.Tests.Features.MyEdenServiceApiTests">
+            <summary>
+            Contains end to end tests for the MyEdenService API.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Features.MyEdenServiceApiTests.AddMyEdenServiceWithSuccess">
+            <summary>
+            Given you have an MyEdenService note
+            When you add the MyEdenService note through the api
+            Then you should be able to retrieve a url to download the note
+            And the note should have the category that you specified when completing the upload
+            And the note should have a transcription.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Features.MyEdenServiceApiTests.DeleteMyEdenServiceWithSuccess">
+            <summary>
+            Given you have an MyEdenService note that you have added
+            When you delete the MyEdenService note
+            Then you should receive a complete message
+            And the get operation should no longer return the note.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+        <member name="M:ContentReactor.MyEdenService.Service.Tests.Features.MyEdenServiceApiTests.ListMyEdenServiceWithSuccess">
+            <summary>
+            Given you added multiple MyEdenService notes for multiple users
+            When you call the list MyEdenService note operation for a single user
+            Then you should get a list of all MyEdenService notes for that user
+            And you should not get any of the MyEdenService notes for another user.
+            </summary>
+            <returns>Task for running the test.</returns>
+        </member>
+    </members>
+</doc>

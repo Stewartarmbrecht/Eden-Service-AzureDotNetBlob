@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContentReactor.Common</name>
+    </assembly>
+    <members>
+        <member name="T:ContentReactor.Common.Blobs.Blob">
+            <summary>
+            Provides the details of a single blob.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.Blob.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ContentReactor.Common.Blobs.Blob"/> class.
+            </summary>
+            <param name="accountName">The name of the account storing the blob.</param>
+            <param name="containerName">The name of the container storing the blob.</param>
+            <param name="blobName">The unique name of the blob in the container.</param>
+            <param name="properties">The properites colletion for the blob.</param>
+        </member>
+        <member name="P:ContentReactor.Common.Blobs.Blob.AccountName">
+            <summary>
+            Gets the account name the blob is stored in.
+            </summary>
+            <value>The name of the account that stores the blob.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Blobs.Blob.ContainerName">
+            <summary>
+            Gets the container name the blob is stored in.
+            </summary>
+            <value>The name of the container that stores the blob.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Blobs.Blob.BlobName">
+            <summary>
+            Gets the name of the blob.
+            </summary>
+            <value>The name of the folder that stores the blob.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Blobs.Blob.Properties">
+            <summary>
+            Gets the properties for the blob.
+            </summary>
+            <value>String dictionary that contains all properties of the blob.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Blobs.BlobRepository">
+            <summary>
+            Provides an interface for interacting with a blob container.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.Blobs.BlobRepository.BlobConnectionString">
+            <summary>
+            Connection string for the target blob repository.
+            </summary>
+            <returns>Connection string.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.GetBlobUploadUrlAsync(System.String,System.String)">
+            <summary>
+            Gets a URI that can be used to upload a specific blob to the blob container.
+            </summary>
+            <param name="containerName">Name of the container to upload the blob to.</param>
+            <param name="blobName">Name of the blob.</param>
+            <returns>Uri to the blob that includes the shared access key.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.GetBlobDownloadUrl(ContentReactor.Common.Blobs.Blob)">
+            <summary>
+            Gets a URI that can be used to download a specific blob to the blob container.
+            </summary>
+            <param name="blob">The blob to get the download Url for.</param>
+            <returns>Uri to the blob that includes the shared access key for downloading the blob.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.GetBlobAsync(System.String,System.String)">
+            <summary>
+            Gets a blob client for a single blob.
+            </summary>
+            <param name="containerName">Name of the container for the blob.</param>
+            <param name="blobName">Name of the blob.</param>
+            <returns>The <see cref="T:ContentReactor.Common.Blobs.Blob"/> that contains the properties about the blob.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.CopyBlobToStreamAsync(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Downloads a blob to a stream.
+            </summary>
+            <param name="containerName">Name of the container for the blob.</param>
+            <param name="blobName">Name of the blob.</param>
+            <param name="stream">The stream to copy the blob to.</param>
+            <returns>A task for the work.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.UpdateBlobPropertiesAsync(ContentReactor.Common.Blobs.Blob)">
+            <summary>
+            Updates the properties of a blob.
+            </summary>
+            <param name="blob">The blob with the updated properties.</param>
+            <returns>Task for performing the operation asynchronously.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.ListBlobsInFolderAsync(System.String,System.String)">
+            <summary>
+            Lists all the blobs in a folder.
+            </summary>
+            <param name="containerName">Name of the container holding the blobs to list.</param>
+            <param name="prefix">Name of the prefix to filter the list of blobs by.</param>
+            <returns>List of <see cref="T:ContentReactor.Common.Blobs.Blob"/> whose name starts with the prefix.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.BlobRepository.DeleteBlobAsync(System.String,System.String)">
+            <summary>
+            Deletes a blob.
+            </summary>
+            <param name="containerName">Container that holds the blob.</param>
+            <param name="blobName">Name of the blob to delete.</param>
+            <returns>Task for deleting the blob.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Blobs.IBlobRepository">
+            <summary>
+            Interface interacting with blobs.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.GetBlobUploadUrlAsync(System.String,System.String)">
+            <summary>
+            Gets a URI that can be used to upload a specific blob to the blob container.
+            </summary>
+            <param name="containerName">Name of the container to upload the blob to.</param>
+            <param name="blobName">Name of the blob.</param>
+            <returns>Uri to the blob that includes the shared access key.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.GetBlobDownloadUrl(ContentReactor.Common.Blobs.Blob)">
+            <summary>
+            Gets a URI that can be used to download a specific blob to the blob container.
+            </summary>
+            <param name="blob">The blob to get the download url for.</param>
+            <returns>Uri to the blob that includes the shared access key.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.GetBlobAsync(System.String,System.String)">
+            <summary>
+            Gets the details of a single blob.
+            </summary>
+            <param name="containerName">Name of the container for the blob.</param>
+            <param name="blobName">Name of the blob.</param>
+            <returns>BlobClient.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.CopyBlobToStreamAsync(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Downloads a blob to a stream.
+            </summary>
+            <param name="containerName">Name of the container for the blob.</param>
+            <param name="blobName">Name of the blob.</param>
+            <param name="stream">The stream to copy the blob to.</param>
+            <returns>A task for the work.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.UpdateBlobPropertiesAsync(ContentReactor.Common.Blobs.Blob)">
+            <summary>
+            Updates the properties of a blob.
+            </summary>
+            <param name="blob">The blob with the updated properties.</param>
+            <returns>Task for performing the operation asynchronously.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.ListBlobsInFolderAsync(System.String,System.String)">
+            <summary>
+            Lists all the blobs in a folder.
+            </summary>
+            <param name="containerName">Name of the container holding the blobs to list.</param>
+            <param name="prefix">Name of the prefix to filter the list of blobs by.</param>
+            <returns>List of BlobItems.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Blobs.IBlobRepository.DeleteBlobAsync(System.String,System.String)">
+            <summary>
+            Deletes a blob.
+            </summary>
+            <param name="containerName">Container that holds the blob.</param>
+            <param name="blobName">Name of the blob to delete..</param>
+            <returns>Task for deleting the blob.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.MyEdenService.MyEdenServiceCreatedEventData">
+            <summary>
+            MyEdenService created event data.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.MyEdenService.MyEdenServiceCreatedEventData.Category">
+            <summary>
+            Gets or sets the category the MyEdenService was uploaded to.
+            </summary>
+            <value>String name of the cateogry.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.MyEdenService.MyEdenServiceDeletedEventData">
+            <summary>
+            Event published with an MyEdenService file is deleted.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.MyEdenService.MyEdenServiceEvents">
+            <summary>
+            MyEdenService events type names.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.Events.MyEdenService.MyEdenServiceEvents.MyEdenServiceCreated">
+            <summary>
+            Type for an event when an MyEdenService file is created.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.MyEdenService.MyEdenServiceEvents.MyEdenServiceDeleted">
+            <summary>
+            Type for an event when an MyEdenService file is deleted.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.MyEdenService.MyEdenServiceEvents.MyEdenServiceTranscriptUpdated">
+            <summary>
+            Type for an event when an MyEdenService transcript is created.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.MyEdenService.MyEdenServiceTranscriptUpdatedEventData">
+            <summary>
+            Event raised when an MyEdenService file has been transcribed.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.MyEdenService.MyEdenServiceTranscriptUpdatedEventData.TranscriptPreview">
+            <summary>
+            Gets or sets the preview of the transcription created for an MyEdenService file.
+            </summary>
+            <value>String value of the transcription preview.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryCreatedEventData">
+            <summary>
+            Event raised when a category is created.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Categories.CategoryCreatedEventData.Name">
+            <summary>
+            Gets or sets the name of the new category.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryDeletedEventData">
+            <summary>
+            Event raised when a category is deleted.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryEvents">
+            <summary>
+            Lists all Categories events.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategoryCreated">
+            <summary>
+            Type for an event when a category is created.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategoryDeleted">
+            <summary>
+            Type for an event when a category is deleted.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategoryNameUpdated">
+            <summary>
+            Type for an event when a category name is updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategoryImageUpdated">
+            <summary>
+            Type for an event when a category image is updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategorySynonymsUpdated">
+            <summary>
+            Type for an event when a category's synonyms are updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Categories.CategoryEvents.CategoryItemsUpdated">
+            <summary>
+            Type for an event when a category's items are updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryImageUpdatedEventData">
+            <summary>
+            Event raised when a category image is updated.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Categories.CategoryImageUpdatedEventData.ImageUrl">
+            <summary>
+            Gets or sets the URL to the updated image.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryItemsUpdatedEventData">
+            <summary>
+            Event raised when category items are updated.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategoryNameUpdatedEventData">
+            <summary>
+            Event raised when a category name is updated.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Categories.CategoryNameUpdatedEventData.Name">
+            <summary>
+            Gets or sets the name of the new cateogry.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Categories.CategorySynonymsUpdatedEventData">
+            <summary>
+            Event raised when the synonyms for a category are updated.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Categories.CategorySynonymsUpdatedEventData.Name">
+            <summary>
+            Gets or sets the name of the category.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Categories.CategorySynonymsUpdatedEventData.Synonyms">
+            <summary>
+            Gets or sets the list of synonyms for the category.
+            </summary>
+            <value>IEnumberable of Strings.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridEvent">
+            <summary>
+            Event grid event.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridEvent`1">
+            <summary>
+            Event grid event of a specfic type T.
+            </summary>
+            <typeparam name="T">Defines the structure for the specific event type.</typeparam>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.Topic">
+            <summary>
+            Gets or sets the Topic for the event.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.Id">
+            <summary>
+            Gets or sets the Id of the event.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.EventType">
+            <summary>
+            Gets or sets the stores a string representation of the event to help with
+            constructing a strong typed version of the event.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.Subject">
+            <summary>
+            Gets or sets the subject of the event.
+            Stores the item id and user id separated by a '/'.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.EventTime">
+            <summary>
+            Gets or sets the time the event occured.
+            Does not look to be used.
+            </summary>
+            <value>DateTime.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridEvent`1.Data">
+            <summary>
+            Gets or sets the strongly typed data of the event.
+            </summary>
+            <value>The strongly typed data for the event.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridPublisherService">
+            <summary>
+            Service for publishing events to the event grid service.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Events.EventGridPublisherService.PostEventGridEventAsync``1(System.String,System.String,``0)">
+            <summary>
+            Posts an event to the event grid service.
+            </summary>
+            <param name="type">Type of the event.</param>
+            <param name="subject">Subject of the event.</param>
+            <param name="payload">Payload for the event.</param>
+            <typeparam name="T">Type of the payload.</typeparam>
+            <returns>Void.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridRequest">
+            <summary>
+            Event grid request.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridRequest`1">
+            <summary>
+            Represents the body of an event grid request.
+            </summary>
+            <typeparam name="TEventData">Type that defines the structure of the event data.</typeparam>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridRequest`1.UserId">
+            <summary>
+            Gets or sets the User id for the message.
+            </summary>
+            <value>The id of the user that triggered the event.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridRequest`1.ItemId">
+            <summary>
+            Gets or sets the item id for the message.
+            </summary>
+            <value>The id of the user that triggered the event.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.EventGridRequest`1.Event">
+            <summary>
+            Gets or sets the details of the event grid event.
+            </summary>
+            <value>An instance of the <see cref="T:ContentReactor.Common.Events.EventGridEvent"/> class.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.EventGridSubscriberService">
+            <summary>
+            Service for subscribing to event grid events.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Events.EventGridSubscriberService.HandleSubscriptionValidationEvent(System.String,Microsoft.Extensions.Primitives.StringValues)">
+            <summary>
+            Handles the request made by the event grid to validate the subscriber end point
+            is ready to handle calls from the event grid for publishing events.
+            </summary>
+            <param name="requestBody">The string value of the request body.</param>
+            <param name="headers">The headers of the request.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Events.EventGridSubscriberService.DeconstructEventGridMessage``1(System.String)">
+            <summary>
+            Deconstructs an event grid message and pulls out the user Id and item id form the subject.
+            </summary>
+            <param name="requestBody">The string value of the request body.</param>
+            <typeparam name="TEventData">The type that structures the event data payload.</typeparam>
+            <returns>Dynamic object that has the event grid event and the user Id and item Id.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.IEventGridPublisherService">
+            <summary>
+            Interface for posting a event to the event grid.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Events.IEventGridPublisherService.PostEventGridEventAsync``1(System.String,System.String,``0)">
+            <summary>
+            Posts an event to the event grid service.
+            </summary>
+            <param name="type">Type of the event.</param>
+            <param name="subject">Subject of the event.</param>
+            <param name="payload">Payload for the event.</param>
+            <typeparam name="T">Type of the payload.</typeparam>
+            <returns>Void.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.IEventGridSubscriberService">
+            <summary>
+            Interface for subscribing to event grid events.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.Events.IEventGridSubscriberService.HandleSubscriptionValidationEvent(System.String,Microsoft.Extensions.Primitives.StringValues)">
+            <summary>
+            Handles the request made by the event grid to validate the subscriber end point
+            is ready to handle calls from the event grid for publishing events.
+            </summary>
+            <param name="requestBody">The string value of the request body.</param>
+            <param name="headers">The headers of the request.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:ContentReactor.Common.Events.IEventGridSubscriberService.DeconstructEventGridMessage``1(System.String)">
+            <summary>
+            Deconstructs an event grid message and pulls out the user Id and item id form the subject.
+            </summary>
+            <param name="requestBody">The string value of the request body.</param>
+            <typeparam name="TEventData">The type of event data to expect.</typeparam>
+            <returns>Dynamic object that has the event grid event and the user Id and item Id.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Images.ImageCaptionUpdatedEventData">
+            <summary>
+            Event raised when an image caption is updated.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Images.ImageCaptionUpdatedEventData.Caption">
+            <summary>
+            Gets or sets the caption that was updated for the image.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Images.ImageCreatedEventData">
+            <summary>
+            Event raised when an image is created.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Images.ImageCreatedEventData.PreviewUri">
+            <summary>
+            Gets or sets the Url to the preview of the image.
+            </summary>
+            <value>System.Uri.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Images.ImageCreatedEventData.Category">
+            <summary>
+            Gets or sets the category for the newly created image.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Images.ImageDeletedEventData">
+            <summary>
+            Event raised when an image is deleted.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Images.ImageEvents">
+            <summary>
+            Events for images.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Images.ImageEvents.ImageCaptionUpdated">
+            <summary>
+            Type for an event when an image caption is updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Images.ImageEvents.ImageCreated">
+            <summary>
+            Type for an event when an image is uploaded.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Images.ImageEvents.ImageDeleted">
+            <summary>
+            Type for an event when an image is deleted.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Text.TextCreatedEventData">
+            <summary>
+            Event raised when text is created.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Text.TextCreatedEventData.Preview">
+            <summary>
+            Gets or sets the truncated preview for the created text note.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Text.TextCreatedEventData.Category">
+            <summary>
+            Gets or sets the category for the new text note.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Text.TextDeletedEventData">
+            <summary>
+            Event raised when a text item is deleted.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Text.TextEvents">
+            <summary>
+            Events for text.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Text.TextEvents.TextCreated">
+            <summary>
+            Type for an event when a text note is created.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Text.TextEvents.TextDeleted">
+            <summary>
+            Type for an event when a text note is deleted.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="F:ContentReactor.Common.Events.Text.TextEvents.TextUpdated">
+            <summary>
+            Type for an event when a text note is updated.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.Events.Text.TextUpdatedEventData">
+            <summary>
+            Event raised when a text item is updated.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.Events.Text.TextUpdatedEventData.Preview">
+            <summary>
+            Gets or sets the preview of the updated text note.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.HealthChecks.HealthCheckResponse">
+            <summary>
+            Structures the repsonse for a health check.
+            </summary>
+        </member>
+        <member name="P:ContentReactor.Common.HealthChecks.HealthCheckResponse.Status">
+            <summary>
+            Gets or sets the overall status of the health check.
+            Will build this out in the future and consider
+            standardizing this model across all microservices to help
+            with defining functionality around the health checks.
+            </summary>
+            <value>HealthCheckStatus.</value>
+        </member>
+        <member name="P:ContentReactor.Common.HealthChecks.HealthCheckResponse.Application">
+            <summary>
+            Gets or sets the name of the application the status is for.
+            </summary>
+            <value>String.</value>
+        </member>
+        <member name="T:ContentReactor.Common.HealthChecks.HealthCheckStatus">
+            <summary>
+            List of valid statuses for a health check.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.HealthChecks.HealthCheckStatus.OK">
+            <summary>
+            Everything is ok.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.HealthChecks.HealthCheckStatus.Warning">
+            <summary>
+            Some issues were detected that could cause an error in the future
+            or did create an issue in the past but are not causing an issue
+            right now.
+            </summary>
+        </member>
+        <member name="F:ContentReactor.Common.HealthChecks.HealthCheckStatus.Error">
+            <summary>
+            An issue was detected that could prevent proper functioning.
+            </summary>
+        </member>
+        <member name="T:ContentReactor.Common.StringExtensions">
+            <summary>
+            Extension methods for strings.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.StringExtensions.Truncate(System.String,System.Int32,System.String)">
+            <summary>
+            Truncates a string over the maximum length and adds '...' to the end.
+            </summary>
+            <param name="value">Value to truncate.</param>
+            <param name="maximumLength">Length at which to truncate the text.</param>
+            <param name="continuationMarker">The marker to place at the end of the string to indicate text was truncated.</param>
+            <returns>Truncated string.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.UserAuthentication.IUserAuthenticationService">
+            <summary>
+            Interface for authenticating the user for the http request.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.UserAuthentication.IUserAuthenticationService.GetUserIdAsync(Microsoft.AspNetCore.Http.HttpRequest,System.String@,Microsoft.AspNetCore.Mvc.IActionResult@)">
+            <summary>
+            Gets the user id from query string.
+            </summary>
+            <param name="req">Request with the user id in the query string.</param>
+            <param name="userId">The user id found in the query string.</param>
+            <param name="responseResult">Null if the user id was successfully retrieved.
+            Otherwise it will contain a response that explains the failure.</param>
+            <returns>Boolean value indicating success in retrieving the user Id from the query string.</returns>
+        </member>
+        <member name="T:ContentReactor.Common.UserAuthentication.QueryStringUserAuthenticationService">
+            <summary>
+            User authentication service that uses the query string.
+            Note: This implementation of the UserAuthentication class uses the query string to obtain the user ID.
+            This assumes that the APIs are called by trusted clients that have performed user authentication.
+            An extension to this sample would be to pass the user's identity in using a bearer token through the
+            Authorization header, and to validate the token and obtain the user ID from a claim.
+            </summary>
+        </member>
+        <member name="M:ContentReactor.Common.UserAuthentication.QueryStringUserAuthenticationService.GetUserIdAsync(Microsoft.AspNetCore.Http.HttpRequest,System.String@,Microsoft.AspNetCore.Mvc.IActionResult@)">
+            <summary>
+            Gets the user id from query string.
+            </summary>
+            <param name="req">Request with the user id in the query string.</param>
+            <param name="userId">The user id found in the query string.</param>
+            <param name="responseResult">Null if the user id was successfully retrieved.
+            Otherwise it will contain a response that explains the failure.</param>
+            <returns>Boolean value indicating success in retrieving the user Id from the query string.</returns>
+        </member>
+    </members>
+</doc>

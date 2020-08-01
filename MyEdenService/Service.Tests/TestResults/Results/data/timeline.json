@@ -1,0 +1,525 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "WithSuccessPublishesMyEdenServiceCreatedEventToEventGrid",
+    "uid" : "537b526c11732382",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559628,
+      "stop" : 1596147559634,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithInvalidMyEdenServiceIdReturnsNull",
+    "uid" : "859b7afef4f3c119",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559779,
+      "stop" : 1596147559781,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "9c611a55bc2fb3a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559701,
+      "stop" : 1596147559705,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "CreateMyEdenServiceTranscriptRequestReturnsExpectedRequest",
+    "uid" : "270eba21ed8650d5",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559715,
+      "stop" : 1596147559720,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessReturnsNoContentResult",
+    "uid" : "7113c92561e198d9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559606,
+      "stop" : 1596147559625,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingUserIdReturnsBadRequest",
+    "uid" : "268c516cc87b11d6",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559782,
+      "stop" : 1596147559790,
+      "duration" : 8
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessDeletesBlob",
+    "uid" : "e2dd32c5c99a6dd8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559744,
+      "stop" : 1596147559748,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessPublishesMyEdenServiceTranscriptUpdatedEventToEventGrid",
+    "uid" : "8326b40af5a9cdab",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559840,
+      "stop" : 1596147559847,
+      "duration" : 7
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ProcessMyEdenServiceTranscriptResponseReturnsExpectedResponse",
+    "uid" : "9ae30b734bdef8bc",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559720,
+      "stop" : 1596147559744,
+      "duration" : 24
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessReturnsSummaries",
+    "uid" : "6640de2927fadb09",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559798,
+      "stop" : 1596147559803,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingMyEdenServiceFileReturnsMyEdenServiceNotUploaded",
+    "uid" : "3ffd28139d561a2b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559634,
+      "stop" : 1596147559645,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound",
+    "uid" : "5e91f04c1c44bbed",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559847,
+      "stop" : 1596147559850,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessUpdatesBlobMetadata",
+    "uid" : "24cf3ad7a2875dbc",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559626,
+      "stop" : 1596147559628,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithTranscriptMissingReturnsMyEdenServiceNote",
+    "uid" : "a72cb58a72e935df",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559777,
+      "stop" : 1596147559779,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithNoTranscriptReturnsNotFound",
+    "uid" : "e2973ee575465442",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559855,
+      "stop" : 1596147559859,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithAnotherUserIdDoesNotReturnSummaries",
+    "uid" : "67cf572ae8d134cd",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559803,
+      "stop" : 1596147559805,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessReturnsMyEdenService",
+    "uid" : "e9acece768861f6f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559772,
+      "stop" : 1596147559777,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingCategoryIdReturnsBadRequest",
+    "uid" : "b63b42414e48ff4e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559712,
+      "stop" : 1596147559715,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessReturnsIdAndUrl",
+    "uid" : "fea5755006ff6e4f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559346,
+      "stop" : 1596147559518,
+      "duration" : 172
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithBlobStorageFailing",
+    "uid" : "a3381cc19a3edc36",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559805,
+      "stop" : 1596147559810,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithInvalidJsonRequestReturnsBadRequest",
+    "uid" : "15cf5f06cf83e388",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559705,
+      "stop" : 1596147559710,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithIncorrectUserIdReturnsMyEdenServiceNotFound",
+    "uid" : "1eab4b0f4ce4d336",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559757,
+      "stop" : 1596147559759,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSubscriptionValidationEventReturnsActionResult",
+    "uid" : "e0a8726c929e26f2",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559859,
+      "stop" : 1596147559865,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "b252f8f42710b847",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559815,
+      "stop" : 1596147559819,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithIncorrectUserIdReturnsNotFound",
+    "uid" : "9878d2621dfde523",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559852,
+      "stop" : 1596147559855,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingUserIdReturnsBadRequest",
+    "uid" : "838ed29dbeb35701",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559695,
+      "stop" : 1596147559701,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithIncorrectUserIdReturnsMyEdenServiceNotUploaded",
+    "uid" : "f8c05e84719caa14",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559648,
+      "stop" : 1596147559651,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingUserIdReturnsBadRequest",
+    "uid" : "7a6ef5eebce32b52",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559810,
+      "stop" : 1596147559815,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "11937c81c3930f78",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559792,
+      "stop" : 1596147559798,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithInvalidMyEdenServiceIdReturnsMyEdenServiceNotFound",
+    "uid" : "8552a018c1a054ba",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559755,
+      "stop" : 1596147559757,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessUpdatesBlobTranscriptInMetadata",
+    "uid" : "f68ff5d3c9e9002a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559819,
+      "stop" : 1596147559840,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithSuccessPublishesMyEdenServiceDeletedEventToEventGrid",
+    "uid" : "fcbd612f3cf9b2c1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559748,
+      "stop" : 1596147559751,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingUserIdReturnsBadRequest",
+    "uid" : "26f81afbceddc41e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559524,
+      "stop" : 1596147559585,
+      "duration" : 61
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "2fb54a608259c04",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559865,
+      "stop" : 1596147559869,
+      "duration" : 4
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "84c0accf8e8783dd",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559585,
+      "stop" : 1596147559606,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithNullPayloadRequestReturnsBadRequest",
+    "uid" : "7899224c645ef109",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559710,
+      "stop" : 1596147559712,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithIncorrectUserIdReturnsNull",
+    "uid" : "3d72410608fdc5bb",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559781,
+      "stop" : 1596147559782,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMissingUserIdReturnsBadRequest",
+    "uid" : "f6302cf839a3ba8a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559759,
+      "stop" : 1596147559766,
+      "duration" : 7
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithMyEdenServiceFileAlreadyCreatedReturnsMyEdenServiceAlreadyCreated",
+    "uid" : "4e0cecbd635488de",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559645,
+      "stop" : 1596147559648,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "WithThrownExceptionThrowsException",
+    "uid" : "f63e71e3964471d4",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596147559766,
+      "stop" : 1596147559772,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "timeline"
+}

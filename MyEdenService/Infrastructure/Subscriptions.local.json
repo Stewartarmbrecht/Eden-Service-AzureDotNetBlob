@@ -1,0 +1,55 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "InstanceName": {
+            "type": "string"
+        },
+        "PublicUrlToLocalWebServer": {
+            "type": "string"
+        },
+        "UniqueDeveloperId": {
+            "type": "string"
+        },
+        "ExpireTimeUtc": {
+            "type": "string"
+        }
+    },
+    "variables": {
+        "eventGridTopicName": "[concat(parameters('InstanceName'),'-events-topic')]",
+        "eventGridFunctionSubscriptions": [
+            {
+                "resourceName": "[concat(parameters('UniqueDeveloperId'),'MyEdenServiceUpdateMyEdenServiceTranscript')]",
+                "webHookUrl": "[concat(parameters('PublicUrlToLocalWebServer'),'/api/UpdateMyEdenServiceTranscript')]",
+                "eventTypes": [
+                    "MyEdenServiceCreated"
+                ]
+            }
+        ]
+    },
+    "resources": [
+        {
+            "name": "[concat(variables('eventGridTopicName'), '/Microsoft.EventGrid/', variables('eventGridFunctionSubscriptions')[copyIndex('eventGridFunctionSubscriptions')].resourceName)]",
+            "copy": {
+                "name": "eventGridFunctionSubscriptions",
+                "count": "[length(variables('eventGridFunctionSubscriptions'))]",
+                "mode": "Parallel"
+            },
+            "type": "Microsoft.EventGrid/topics/providers/eventSubscriptions",
+            "location": "[resourceGroup().location]",
+            "apiVersion": "2018-01-01",
+            "properties": {
+                "destination": {
+                    "endpointType": "WebHook",
+                    "properties": {
+                        "endpointUrl": "[variables('eventGridFunctionSubscriptions')[copyIndex('eventGridFunctionSubscriptions')].webHookUrl]"
+                    }
+                },
+                "filter": {
+                    "includedEventTypes": "[variables('eventGridFunctionSubscriptions')[copyIndex('eventGridFunctionSubscriptions')].eventTypes]"
+                },
+                "expirationTimeUtc": "[parameters('ExpireTimeUtc')]"
+            }
+        }
+    ]
+}

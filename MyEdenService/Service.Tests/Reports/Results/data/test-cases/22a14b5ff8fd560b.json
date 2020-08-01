@@ -1,0 +1,41 @@
+{
+  "uid" : "22a14b5ff8fd560b",
+  "name" : "WithThrownExceptionThrowsException",
+  "fullName" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithThrownExceptionThrowsException",
+  "historyId" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests.WithThrownExceptionThrowsException",
+  "time" : {
+    "start" : 1595381379609,
+    "stop" : 1595381379613,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "package",
+    "value" : "ContentReactor.MyEdenService.Service.Tests.Unit.AddCompleteFunctionTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "trx"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22a14b5ff8fd560b.json",
+  "parameterValues" : [ ]
+}
