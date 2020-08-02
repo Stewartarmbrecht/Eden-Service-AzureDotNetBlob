@@ -1,3 +1,3 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly:InternalsVisibleTo("ContentReactor.MyEdenService.Service.Tests")]
+[assembly:InternalsVisibleTo("MyEdenSolution.MyEdenService.Service.Tests")]

@@ -1,11 +1,11 @@
-﻿namespace ContentReactor.MyEdenService.Service.Tests.Unit
+﻿namespace MyEdenSolution.MyEdenService.Service.Tests.Unit
 {
     using System;
     using System.Threading.Tasks;
-    using ContentReactor.MyEdenService.Service;
-    using ContentReactor.Common.Events;
-    using ContentReactor.Common.Fakes;
-    using ContentReactor.Common.UserAuthentication;
+    using MyEdenSolution.MyEdenService.Service;
+    using MyEdenSolution.Common.Events;
+    using MyEdenSolution.Common.Fakes;
+    using MyEdenSolution.Common.UserAuthentication;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;

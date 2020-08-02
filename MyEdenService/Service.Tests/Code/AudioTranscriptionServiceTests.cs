@@ -1,8 +1,8 @@
-﻿namespace ContentReactor.MyEdenService.Service.Tests.Unit
+﻿namespace MyEdenSolution.MyEdenService.Service.Tests.Unit
 {
     using System;
     using System.IO;
-    using ContentReactor.MyEdenService.Service;
+    using MyEdenSolution.MyEdenService.Service;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>

@@ -1,10 +1,10 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     using System;
     using System.IO;
     using System.Threading.Tasks;
-    using ContentReactor.Common;
-    using ContentReactor.Common.Events.MyEdenService;
+    using MyEdenSolution.Common;
+    using MyEdenSolution.Common.Events.MyEdenService;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;

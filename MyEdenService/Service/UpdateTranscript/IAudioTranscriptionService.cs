@@ -1,4 +1,4 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     using System.IO;
     using System.Threading.Tasks;

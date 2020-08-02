@@ -1,8 +1,8 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
-    using ContentReactor.Common.Blobs;
-    using ContentReactor.Common.Events;
-    using ContentReactor.Common.UserAuthentication;
+    using MyEdenSolution.Common.Blobs;
+    using MyEdenSolution.Common.Events;
+    using MyEdenSolution.Common.UserAuthentication;
     using Microsoft.Extensions.DependencyInjection;
 
     /// <summary>

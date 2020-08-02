@@ -1,12 +1,12 @@
-namespace ContentReactor.MyEdenService.Service.Tests.Unit
+namespace MyEdenSolution.MyEdenService.Service.Tests.Unit
 {
-    using ContentReactor.Common.Events;
-    using ContentReactor.Common.Events.MyEdenService;
-    using ContentReactor.Common.Fakes;
-    using ContentReactor.Common.UserAuthentication;
+    using MyEdenSolution.Common.Events;
+    using MyEdenSolution.Common.Events.MyEdenService;
+    using MyEdenSolution.Common.Fakes;
+    using MyEdenSolution.Common.UserAuthentication;
     using Microsoft.AspNetCore.Http;
     using Moq;
-    using Api = ContentReactor.MyEdenService.Service;
+    using Api = MyEdenSolution.MyEdenService.Service;
 
     /// <summary>
     /// Helper functions to get mocks for MyEdenService unit testing.

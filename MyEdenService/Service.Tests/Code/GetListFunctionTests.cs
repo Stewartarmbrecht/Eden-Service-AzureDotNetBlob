@@ -1,8 +1,8 @@
-﻿namespace ContentReactor.MyEdenService.Service.Tests.Unit
+﻿namespace MyEdenSolution.MyEdenService.Service.Tests.Unit
 {
     using System.Threading.Tasks;
-    using ContentReactor.MyEdenService.Service;
-    using ContentReactor.Common.Fakes;
+    using MyEdenSolution.MyEdenService.Service;
+    using MyEdenSolution.Common.Fakes;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;

@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service.Tests/MyEdenSolution.MyEdenService.Service.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service.Tests/MyEdenSolution.MyEdenService.Service.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service.Tests/MyEdenSolution.MyEdenService.Service.Tests.csproj",
+        "projectName": "MyEdenSolution.MyEdenService.Service.Tests",
+        "projectPath": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service.Tests/MyEdenSolution.MyEdenService.Service.Tests.csproj",
+        "packagesPath": "/var/nuget",
+        "outputPath": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/MyEdenSolution.MyEdenService.Service.csproj": {
+                "projectPath": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/MyEdenSolution.MyEdenService.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "ReportGenerator": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            },
+            "SecurityCodeScan": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.5.3, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/dotnet/sdks/3.1.202/sdk/3.1.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/MyEdenSolution.MyEdenService.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/MyEdenSolution.MyEdenService.Service.csproj",
+        "projectName": "MyEdenSolution.MyEdenService.Service",
+        "projectPath": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/MyEdenSolution.MyEdenService.Service.csproj",
+        "packagesPath": "/var/nuget",
+        "outputPath": "/home/codespace/workspace/Eden-Service-AzureDotNetBlob/MyEdenService/Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Azure.Functions.Extensions": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            },
+            "SecurityCodeScan": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/dotnet/sdks/3.1.202/sdk/3.1.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

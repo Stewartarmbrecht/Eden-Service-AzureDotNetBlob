@@ -4,5 +4,5 @@ param(
     [String] $LoggingPrefix
 )
 
-Write-EdenBuildInfo "Building the ContentReactor.MyEdenService.sln Solution continuously." $LoggingPrefix
-dotnet watch --project ./ContentReactor.MyEdenService.sln build ./ContentReactor.MyEdenService.sln
+Write-EdenBuildInfo "Building the MyEdenSolution.MyEdenService.sln Solution continuously." $LoggingPrefix
+dotnet watch --project ./MyEdenSolution.MyEdenService.sln build ./MyEdenSolution.MyEdenService.sln

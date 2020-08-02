@@ -1,10 +1,10 @@
-﻿namespace ContentReactor.MyEdenService.Service.Tests.Features
+﻿namespace MyEdenSolution.MyEdenService.Service.Tests.Features
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Net.Http;
     using System.Threading.Tasks;
-    using ContentReactor.MyEdenService.Service;
+    using MyEdenSolution.MyEdenService.Service;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Newtonsoft.Json;
 

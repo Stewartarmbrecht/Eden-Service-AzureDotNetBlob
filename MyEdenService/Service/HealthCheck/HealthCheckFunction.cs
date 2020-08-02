@@ -1,8 +1,8 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     using System;
     using System.Threading.Tasks;
-    using ContentReactor.Common.HealthChecks;
+    using MyEdenSolution.Common.HealthChecks;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;

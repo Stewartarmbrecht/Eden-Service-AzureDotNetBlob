@@ -5,7 +5,7 @@ param(
 )
 
 Write-EdenBuildInfo "Publishing the function application to './.dist/app'." $LoggingPrefix
-dotnet publish ./Service/ContentReactor.MyEdenService.Service.csproj -c Release -o ./.dist/app
+dotnet publish ./Service/MyEdenSolution.MyEdenService.Service.csproj -c Release -o ./.dist/app
 
 $appPath =  "./.dist/app/**"
 $appDestination = "./.dist/app.zip"

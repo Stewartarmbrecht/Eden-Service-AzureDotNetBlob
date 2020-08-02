@@ -1,12 +1,12 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     using System;
     using System.IO;
     using System.Threading.Tasks;
-    using ContentReactor.Common.Blobs;
-    using ContentReactor.Common.Events;
-    using ContentReactor.Common.Events.MyEdenService;
-    using ContentReactor.Common.UserAuthentication;
+    using MyEdenSolution.Common.Blobs;
+    using MyEdenSolution.Common.Events;
+    using MyEdenSolution.Common.Events.MyEdenService;
+    using MyEdenSolution.Common.UserAuthentication;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;

@@ -1,4 +1,4 @@
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     using Newtonsoft.Json;
 

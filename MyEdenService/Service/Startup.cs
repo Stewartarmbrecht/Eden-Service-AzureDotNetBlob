@@ -1,13 +1,13 @@
 using System;
-using ContentReactor.Common.Blobs;
-using ContentReactor.Common.Events;
-using ContentReactor.Common.UserAuthentication;
+using MyEdenSolution.Common.Blobs;
+using MyEdenSolution.Common.Events;
+using MyEdenSolution.Common.UserAuthentication;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
-[assembly: FunctionsStartup(typeof(ContentReactor.MyEdenService.Service.Startup))]
+[assembly: FunctionsStartup(typeof(MyEdenSolution.MyEdenService.Service.Startup))]
 
-namespace ContentReactor.MyEdenService.Service
+namespace MyEdenSolution.MyEdenService.Service
 {
     /// <summary>
     /// Initialized at that startup of the function.
